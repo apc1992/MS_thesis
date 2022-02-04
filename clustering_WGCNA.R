@@ -96,4 +96,4 @@ table(net_p16$colors)
 # dendogram construction #
 
 mergedColors = labels2colors(net_p10$colors)
-plotDendroAndColors(net_p10$dendrograms[[1]], mergedColors[net_p10$blockGenes[[1]]], "Module colors", dendroLabels = F, hang = 0.03, addGuide = TRUE, guideHang = 0.05)                           
+plotDendroAndColors(net_p10$dendrograms[[1]], mergedColors[net_p16$blockGenes[[1]]], "Module colors", dendroLabels = F, hang = 0.03, addGuide = TRUE, guideHang = 0.05)                           
