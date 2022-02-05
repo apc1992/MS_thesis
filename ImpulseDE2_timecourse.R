@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-# this script is intended to be as a guide to use ImpulseDE2 package for time-course DEA, the filtered counts and the experimental conditions must be supplied by the user #
+# this script is intended to be used as a guide to use ImpulseDE2 package for time-course DEA, the filtered counts and the experimental conditions must be supplied by the user #
 # experimental dataframe Conditions (line19) must be rewritten by the user #
 # giving the path to the folder that contains the filtered counts #
 
