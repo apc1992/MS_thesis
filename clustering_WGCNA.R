@@ -39,7 +39,7 @@ vitData=read.csv(file = 'tpm_significant.csv',
 row.names(vitData) = vitData$Vcost
 vitData$Vcost= NULL
 
-# Constructing  a  weighted  gene  network  entails  the  choice  of  the  soft  thresholding  powerβto which  co-expressionsimilarity is raised to calculate adjacency #
+# Constructing  a  weighted  gene  network  entails  the  choice  of  the  soft  thresholding  power β to which  co-expression similarity is raised to calculate adjacency #
 # Choose a set of soft-thresholding powers, we can construct signed or unsigned networks, in our case we are interested in identifying positive and negative correlations so signed correlations will be applied #
 
 # Plot the results of powers graph and connectivity #
