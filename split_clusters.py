@@ -1,13 +1,17 @@
+!#usr/bin/env/python3
+# this script splits the zscore general table in different files that contain all the genes corresponding to each cluster #
 
-file1 = open("/home/arnau/Escritorio/TOMBIOLAB/Vitis_impulse/WGCNA/finalZscore/tpm_zscore.csv","r")
-file2 = open("/home/arnau/Escritorio/TOMBIOLAB/Vitis_impulse/WGCNA/finalZscore/final_clusters_signed.txt","r")
+# zscore table #
+file1 = open("/home/arnau/tpm_zscore.csv","r")
+# metadata with identifier+nºcluster #
+file2 = open("/home/arnau/final_clusters_signed.txt","r")
 
-
+# empty lists to load the input and output data #
 lista_r=[]
 lista_c=[]
 lista_completo=[]
    
-
+# splitter function #
 def create_files():
     i=0
     for line in file1:
@@ -43,7 +47,7 @@ def create_files():
              f.write('{0}\t{1}'.format(completo.id,datos_formated))
        
         
-        
+# input and output objects #        
         
 class Completo:
     def __init__(self, id, datos, cluster):
